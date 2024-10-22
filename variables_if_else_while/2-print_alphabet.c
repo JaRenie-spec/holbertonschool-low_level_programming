@@ -3,7 +3,7 @@
 /**
  *main - printing the alphabet in lower case.
  *
- *return: Always 0.
+ *Return: Always 0.
  */
 
 

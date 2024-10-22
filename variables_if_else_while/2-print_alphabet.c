@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/**printing the alphabet in lower case
+/** printing the alphabet in lower case
  *
- * return: always (0)
+ * return: always 0
  */
 
 
@@ -19,5 +19,4 @@ for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 putchar('\n');
 
 return (0);
-
 }

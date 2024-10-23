@@ -8,12 +8,12 @@
 
 void print_alphabet(void)
 
-/**
- * print_alphabet - prototype for the main
- *
- */
-
 {
+	/**
+	 * prototype for the main
+	 *
+	 */
+
 char alphabet;
 
 for (alphabet = 'a' ; alphabet <= 'z' ; alphabet++)

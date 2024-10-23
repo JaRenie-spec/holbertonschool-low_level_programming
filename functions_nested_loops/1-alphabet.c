@@ -8,6 +8,11 @@
 
 void print_alphabet(void)
 
+/**
+ * print_alphabet - prototype for the main
+ *
+ */
+
 {
 char alphabet;
 

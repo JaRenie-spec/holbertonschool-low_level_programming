@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - draws a diagonal line
- *
+ * @n: number of times the character should be print
  */
 
 void print_diagonal(int n)
@@ -15,11 +15,11 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		for (d =0; d < n; d++)
+		for (d = 0; d < n; d++)
 		{
 			for (j = 0; j < d; j++)
 				{
-					_putchar(' ');
+				_putchar(' ');
 				}
 			_putchar(92);
 			_putchar('\n');

@@ -26,7 +26,7 @@ int main(void)
 		}
 		else if (n == 100)
 		{
-			printf("buzz");
+			printf("Buzz");
 		}
 		else
 		{

@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * fizzbuzz - fizz buzz test.
+ * main - fizz buzz test.
  *
- * Return 0
+ * Return: 0
  */
 
 int main(void)
@@ -14,19 +14,19 @@ int main(void)
 	{
 		if (n % 15 == 0)
 		{
-			printf ("FizzBuzz ");
+			printf("FizzBuzz ");
 		}
 		else if (n % 3 == 0)
 		{
-			printf ("Fizz ");
+			printf("Fizz ");
 		}
 		else if (n % 5 == 0)
 		{
-			printf ("Buzz ");
+			printf("Buzz ");
 		}
 		else
 		{
-			printf ("%d ", n);
+			printf("%d ", n);
 		}
 	}
 	return (0);

@@ -2,8 +2,8 @@
 
 /**
  * _puts_recursion - whrite a function that print a string in recursion
- * 
- * 
+ * @s: the string to print
+ *
  */
 
 void _puts_recursion(char *s)

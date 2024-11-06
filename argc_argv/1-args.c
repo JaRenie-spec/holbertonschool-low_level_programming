@@ -1,18 +1,15 @@
 #include <stdio.h>
 
 /**
- * @main - prints the number of arguments
- *
+ * main - print all arguments
  * @argc: int
- * @argv: argument list
- *
- *Return : 0
+ * @argv: list arguments
+ * Return: 0 success
  */
 
 int main(int argc, char *argv[])
 {
 	(void)(argv);
-	printf ("%d\n", (argc -1));
-
+	printf("%d\n", (argc - 1));
 	return (0);
 }

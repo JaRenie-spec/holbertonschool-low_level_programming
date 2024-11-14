@@ -5,7 +5,8 @@
  * _strdup - return pointer to newly allocated space in memory
  * which containt copy of string given as parameter
  * @str: copy of the string
- * @Return: Null if error, pointer to allocated space
+ *
+ * Return: Null if error, pointer to allocated space
  */
 
 char *_strdup(char *str)
@@ -15,10 +16,9 @@ char *_strdup(char *str)
 	char *buffer;
 
 	if (str == NULL)
-		{
-			return (NULL);
-		}
-		
+	{
+		return (NULL);
+	}
 	while (str[len] != '\0')
 		len++;
 

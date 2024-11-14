@@ -1,46 +1,45 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * alloc_grid - allocate memorory a grid of integer
- * @width: width of the grid
- * @height: height of the grid
+ * alloc_grid - returns a pointer to a 2 dimensional array of integers
+ * @width: Width of grid
+ * @height: height of grid
  *
- * Return: pointer to a 2d array
+ * Return: NULL on failure, NULL if @width or @height is 0 or negative,
+ * on success: a pointer to a 2 dimensional array of integers
  */
 
 int **alloc_grid(int width, int height)
 {
-	int **ptr;
-	int x, y, z, l;
+	int **ar;
+	int i, j, k;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	ptr = malloc(sizeof(int *) * height);
-
-	if (ptr == NULL)
-	{
+	ar = malloc(sizeof(int *) * height);
+	if (ar == NULL)
 		return (NULL);
-	}
 
-	for (x = 0; x < height; x++)
+	for (i = 0; i < height; i++)
 	{
-		ptr[x] = malloc(sizeof(int) * width);
-
-		if (ptr[x] == NULL)
+		ar[i] = malloc(sizeof(int) * width);
+		if (ar[i] == NULL)
 		{
-			for (y = x; y >= 0; y--)
+			while (i >= 0)
+			{
+				free(ar[i]);
+				i--;
+			}
+			free(ar);
 			return (NULL);
 		}
 	}
-
-	for (z = 0; z < height; z++)
+	for (j = 0; j < height; j++)
 	{
-		for (l = 0; l < width; l++)
-			ptr[z][l] = 0;
+		for (k = 0; k < width; k++)
+			ar[j][k] = 0;
 	}
-
-	return (ptr);
+	return (ar);
 }

@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - allocate memorory a grid of integer
- * @width: width of the grid
- * @height: height of the grid
+ * alloc_grid - allocate memorory a grid of integer.
+ * @width: width of the grid.
+ * @height: height of the grid.
  *
  * Return: pointer to a 2d array
  */

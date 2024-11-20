@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 {
 	int (*fptr)(int, int);
 
-	if (argc > 4)
+	if (argc != 4)
 	{
 		printf("error\n");
 		exit (98);

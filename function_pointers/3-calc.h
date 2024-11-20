@@ -1,5 +1,5 @@
-#ifndef _op_h
-#define _op_h
+#ifndef _BATMAN_H
+#define _BATMAN_H
 
 typedef struct op
 {
@@ -12,4 +12,5 @@ int op_sub(int a, int b);
 int op_mul(int a, int b);
 int op_div(int a, int b);
 int op_mod(int a, int b);
+
 #endif

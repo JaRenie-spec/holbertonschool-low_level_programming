@@ -3,26 +3,30 @@
 #include <stdlib.h>
 
 /**
- * @b
+ * main - program to find an operation
+ * @argc: number of argument
+ * @argv: list of argument
  *
- * @return int
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
 {
-	char *op;
-	int calc;
-	int num1, num2;
+	int (*fptr)(int, int);
 
 	if (argc > 4)
 	{
 		printf("error\n");
 		exit (98);
 	}
-	if (argv[2] != op)
+
+	fptr = get_op_func(argv[2]);
+
+	if (fptr == NULL)
 	{
 		printf("error\n");
 		exit (99);
 	}
-	printf("%d\n", calc);
+	printf("%d\n", fptr(atoi(argv[1]), atoi(argv[3])));
+	return (0);
 }

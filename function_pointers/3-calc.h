@@ -1,5 +1,5 @@
-#ifndef op_t
-#define op_t
+#ifndef op_h
+#define op_h
 
 typedef struct op
 {

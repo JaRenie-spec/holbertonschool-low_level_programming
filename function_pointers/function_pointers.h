@@ -1,5 +1,5 @@
-#ifndef _POINT.H
-#define _POINT.H
+#ifndef _POINT_H
+#define _POINT_H
 
 #include <stddef.h>
 

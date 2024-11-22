@@ -88,6 +88,6 @@ while (format && format[i])
 	}
 	i++;
 }
-va_end(ap);
 printf("\n");
+va_end(ap);
 }

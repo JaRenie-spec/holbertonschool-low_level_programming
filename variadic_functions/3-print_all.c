@@ -64,30 +64,30 @@ void print_all(const char *const format, ...)
 	char *c = "";
 
 	print_type spec[] = {
-	{"%c", print_char},
-	{"%i", print_int},
-	{"%f", print_float},
-	{"%s", print_string},
-	{NULL, NULL}
+			{"%c", print_char},
+			{"%i", print_int},
+			{"%f", print_float},
+			{"%s", print_string},
+			{NULL, NULL}
 	};
 
-va_start(ap, format);
+	va_start(ap, format);
 
-while (format && format[i])
-{
-	j = 0;
-	while (spec[j].spec)
+	while (format && format[i])
 	{
-		if (format[i] == spec[j].spec[1])
+		j = 0;
+		while (spec[j].spec)
 		{
-			printf("%s", c);
-			spec[j].f(ap);
-			c = ", ";
+			if (format[i] == spec[j].spec[1])
+			{
+				printf("%s", c);
+				spec[j].f(ap);
+				c = ", ";
+			}
+			j++;
 		}
-		j++;
+		i++;
 	}
-	i++;
-}
-printf("\n");
-va_end(ap);
+	printf("\n");
+	va_end(ap);
 }

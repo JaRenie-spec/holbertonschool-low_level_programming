@@ -69,7 +69,7 @@ void print_all(const char *const format, ...)
 	{"%f", print_float},
 	{"%s", print_string},
 	{NULL, NULL}
-};
+	};
 
 va_start(ap, format);
 

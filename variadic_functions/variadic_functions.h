@@ -1,5 +1,12 @@
 #ifndef _ROBIN_h
 #define _ROBIN_h
+#include <stdarg.h>
+
+typedef struct type
+{
+	char *spec;
+	void (*f)(va_list ap);
+}print_type;
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);

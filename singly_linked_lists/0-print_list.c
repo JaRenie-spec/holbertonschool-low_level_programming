@@ -1,6 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
-#include <stddef.h>
+#include <string.h>
 
 /**
  * print_list - function that print in a linked list
@@ -19,6 +19,7 @@ size_t print_list(const list_t *h)
 
 		else
 			printf("[%u] %s\n", h->len, h->str);
+			
 		h = h->next;
 		node++;
 	}

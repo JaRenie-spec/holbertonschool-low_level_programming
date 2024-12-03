@@ -3,8 +3,10 @@
 #include <string.h>
 
 /**
- * @brief
- *
+ * add_node_end - adding a new node at the beginning
+ * @head: the head of the list
+ * @str: element of the node
+ * Return: the newnode
  */
 
 list_t *add_node_end(list_t **head, const char *str)
@@ -12,9 +14,9 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *newnode = malloc(sizeof(list_t));
 	list_t *lastnode = *head;
 
-	if(newnode == NULL)
+	if (newnode == NULL)
 		return (0);
-		
+
 	newnode->str = strdup(str);
 	newnode->len = strlen(str);
 	newnode->next = NULL;

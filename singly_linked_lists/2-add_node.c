@@ -3,15 +3,17 @@
 #include <string.h>
 
 /**
- * @brief
- *
+ * add_node - adding a new node at the beginning
+ * @head: the head of the list
+ * @str: element of the node
+ * Return: the newnode
  */
 
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *newnode = malloc(sizeof(list_t));
 
-	if(newnode == NULL)
+	if (newnode == NULL)
 		return (0);
 
 	if (head == NULL)

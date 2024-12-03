@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * @brief
+ * free_list - free all the node
+ * @head: the head of the list
  *
  */
 

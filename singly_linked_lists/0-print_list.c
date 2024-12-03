@@ -5,7 +5,7 @@
 /**
  * print_list - function that print in a linked list
  * @h: the pointer to a struct
- * Return: the number a node in the linked list
+ * Return: the number a node in the linked list,if str = NULL return (nil)
  */
 
 size_t print_list(const list_t *h)

@@ -3,9 +3,9 @@
 #include <string.h>
 
 /**
- * print_list - function that print in a linked list
- * @h: the pointer to a struct
- * Return: the number a node in the linked list,if str = NULL return (nil)
+ * print_list - prints all the elements of a list_t list
+ * @h: pointer to structure
+ * Return: the number of nodes, if str is null return (nil)
  */
 
 size_t print_list(const list_t *h)

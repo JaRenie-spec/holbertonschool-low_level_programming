@@ -1,9 +1,8 @@
-#ifndef GUARD_h
-#define GUARD_h
-#include <stdlib>
-#include <string.h>
+#ifndef GUARD_H
+#define GUARD_H
 #include <stdio.h>
-
+#include <string.h>
+#include <stdlib.h>
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -12,14 +11,14 @@
  *
  * Description: singly linked list node structure
  */
-
 typedef struct list_s
 {
-    char *str;
-    unsigned int len;
-    struct list_s *next;
+	char *str;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
 
+int _putchar(char c);
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
 list_t *add_node(list_t **head, const char *str);

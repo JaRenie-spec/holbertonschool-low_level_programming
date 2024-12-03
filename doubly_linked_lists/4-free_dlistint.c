@@ -1,9 +1,8 @@
 #include "lists.h"
 
 /**
- * @brief
- *
- * @param head
+ * free_dlistint - free all the node by both end
+ * @head: the head of the list.
  */
 
 void free_dlistint(dlistint_t *head)
@@ -12,7 +11,7 @@ void free_dlistint(dlistint_t *head)
 
 	if (head != NULL)
 		while (head->prev != NULL)
-			head= head->prev;
+			head = head->prev;
 
 	while ((tmp = head) != NULL)
 	{

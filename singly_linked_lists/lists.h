@@ -1,5 +1,8 @@
 #ifndef GUARD_h
 #define GUARD_h
+#include <stdlib>
+#include <string.h>
+#include <stdio.h>
 
 /**
  * struct list_s - singly linked list

@@ -30,14 +30,11 @@ int main(int argc, char *argv[])
 		close(file_from);
 		exit(99);
 	}
-
 	while ((num = read(file_from, buffer, 1024)) > 0)
 	{
 		if (write(file_to, buffer, num) != num)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-			close(file_from);
-			close(file_to);
 			exit(99);
 		}
 	}
